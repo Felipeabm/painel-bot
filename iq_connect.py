@@ -1,8 +1,9 @@
-from iqoptionapi.stable_api import IQ_Option
+from iqoptionapi.api import IQOption
+
 import time
 
 def conectar_iq(email, senha, tipo_conta="PRACTICE"):
-    Iq = IQ_Option(email, senha)
+    iq = IQOption(email, senha)
     Iq.connect()
     time.sleep(1)
 
